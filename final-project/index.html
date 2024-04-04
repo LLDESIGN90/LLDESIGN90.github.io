@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
 
@@ -19,22 +19,22 @@
 
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="logo">
             <img src="images/logo.png" alt="Logo of Three Star Media">
         </div>
 
         <nav>
             <ul>
-                <li><a href="index.html" class="home">Home</a></li>
-                <li><a href="index.html">About Us</a></li>
-                <li><a href="index.html">Services</a></li>
-                <li><a href="index.html">Team</a></li>
-                <li><a href="index.html">Contact</a></li>
+                <li><a href="#home"class="home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
-        <!--Search bar -->
+        <!--Search bar with icon from fontawesome for a good design and user experience-->
 
         <div class="searchbar">
             <input type="text" placeholder="Search" name="Search"> 
@@ -45,17 +45,22 @@
     <!--main-banner image to be made as a background in CSS-->
 
     <main>
-        <div class="welcome">
-            <div class="textwelcome"></div>
+        <div class="welcome">]
+            <!--class wrapper added to adjust the content width etc..-->
+            <div class="wrapper">
             <h1>Welcome to Three Star Media</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cupiditate nisi unde laborum, obcaecati mollitia, accusamus corrupti quis qui non delectus placeat est aliquam illum. Eum debitis excepturi temporibus accusamus.
             </p>
             <button type="button" class="bannerbutton">Connect with us <i class="fa-sharp fa-solid fa-play"></i></button>
             </div>
+        </div>
 
-    <section>
+            <!-- id added to link the menu options to our sections on the page-->
+
+    <section id="about">
         <div class="about">
+            <div class="container">
 
             <img src="images/about-us.jpg" alt="Lounge">
         
@@ -65,16 +70,22 @@
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi possimus laborum, illo quos commodi beatae nam nemo accusantium ex, veritatis corporis error vitae aut accusamus iusto sunt! Natus, modi?</p>
         </div>
+    </div>
 
     </section>
 
-        <section>
+        <section id="services">
 
         <div class="services">
 
             <h2>Our Services</h2>
 
+            <div class="container">
+                <div class="transformation">
+
             <img src="images/digital.jpg" alt="Work office">
+
+                <div class="padded-content">
 
             <h3>Digital Transformation</h3>
 
@@ -82,59 +93,71 @@
             
             <button type="button" class="digital">Digital Plans <i class="fa-sharp fa-solid fa-play"></i></button>
 
-
+        </div>
+    </div>
         <div class="marketing">
 
             <img src="images/marketing.jpg" alt="Laptop with charts">
 
+            <div class="padded-content">
+            
             <h3>Marketing</h3>
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis deleniti nobis maxime debitis commodi eum, necessitatibus impedit, voluptates odio eveniet cumque dolorum quibusdam hic suscipit rem quod blanditiis animi recusandae.</p>
             
             <button type="button" class="marketing-button">Marketing Plans <i class="fa-sharp fa-solid fa-play"></i></button>
-
+                </div>
         </div>
         
-        <div class="video-production"></div>
+        <div class="video-production">
 
         <img src="images/video.jpg" alt="Smartphone wwith youtube logo on screen">
 
+        <div class="padded-content">
+       
         <h3>Video Production</h3>
 
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus aut nesciunt vel rerum laboriosam. Et laudantium, aut sapiente earum optio itaque unde modi, quos quis sint vel, rerum architecto delectus?</p>
     
         <button type="button" class="video-plans">Video Plans <i class="fa-sharp fa-solid fa-play"></i></button>
     
+        </div>
     </div>
 
     <div class="web-dev">
 
         <img src="images/web.jpg" alt="Smartphone on a Notebook with Instagram on screen">
 
-        <h3>Weeb Development</h3>
+        <div class="padded-content">
+        
+        <h3>Web Development</h3>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id eveniet consectetur rem et quae, expedita quasi libero labore explicabo? Magnam culpa similique et mollitia! Accusamus reiciendis impedit laboriosam aut.</p>
 
         <button type="button" class="web-plans">Web Plans <i class="fa-sharp fa-solid fa-play"></i></button>
 
+        </div>
     </div>
 
     <div class="print">
 
         <img src="images/print.jpg" alt="Newspaper stand">
 
+        <div class="padded-content">
+        
         <h3>Print</h3>
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat delectus dicta eum blanditiis, autem hic temporibus dolor minus fuga eaque nobis animi mollitia numquam exercitationem ut nihil magnam distinctio velit.</p>
         
         <button type="button" class="print-plans">Print Plans <i class="fa-sharp fa-solid fa-play"></i></button>
 
+         </div>
     </div>
 
     <!--Vision image to be made as a background in CSS-->
     
     <div class="our-vision">
-        <div class="our-vision-content">
+        <div class="wrapper">
             <h3>Our Vision</h3>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem labore nemo. Error, perferendis labore sit ab reiciendis laborum maxime a exercitationem quibusdam dignissimos vero, quidem quaerat maiores enim corporis!</p>
@@ -145,7 +168,7 @@
         </div>
     </section>
         
-    <section>
+    <section id="team">
 
         <div class="team">
 
@@ -155,6 +178,8 @@
 
             <img src="images/john.jpg" alt="Photo of john Doe">
 
+            <div class="padded-content">
+            
             <h3>John Doe</h3>
 
             <h4>CEO and Co-owner</h4>
@@ -168,6 +193,8 @@
 
             <img src="images/bob.jpg" alt="Photo of Bob Rite">
 
+            <div class="padded-content">
+
             <h3>Bob Rite</h3>
 
             <h4>CFO and Co-owner</h4>
@@ -175,11 +202,12 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta numquam ea iure deleniti sed veniam quisquam similique, tempora delectus vero repudiandae repellendus aperiam quos officia sit dignissimos sapiente, perferendis ut.
             </p>
 
+            </div>
         </div>
 
     </section>
 
-    <section>
+    <section id="contact">
 
         <div class="info">
 
@@ -188,11 +216,14 @@
             <h3>Send us a message</h3>
             <div class="message">
 
-        <form>
+        <form action="index.html" method="post">
+
             <label for="name">Full name</label><br>
             <input type="text" id="name" name="name"><br>
+
             <label for="email">Email</label><br>
-            <input type="text" id="email" name="email"><br>
+            <input type="email" id="email" name="email"><br>
+
             <label for="message">Message</label><br>
             <input type="text" id="message" name="message"><br>
 
@@ -211,11 +242,16 @@
         <h3>Hours of operation</h3>
 
         <table>
+            <thead>
             
             <tr>
                 <th>Days</th>
                 <th>Hours</th>
             </tr>
+
+        </thead>
+
+        <tbody>
 
             <tr>
                 <td>Monday - Friday</td>
@@ -226,6 +262,8 @@
                 <td>Saturday - Sunday</td>
                 <td>Closed</td>
             </tr>
+
+        </tbody>
 
         </table>
 
