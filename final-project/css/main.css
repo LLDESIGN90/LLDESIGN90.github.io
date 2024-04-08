@@ -1,4 +1,16 @@
-html {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -6,23 +18,41 @@ html {
 	font: inherit;
 	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
 	line-height: 1;
-	font-family: 'Open Sans', sans-serif;
-    font-size: 16pt;
-	margin: 0 auto;
-	letter-spacing: 0px;
 }
-
 ol, ul {
 	list-style: none;
 }
-
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* adjust font settings for body */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 16pt;
+	letter-spacing: 0px;
+	margin: 0 auto;
+}
+
+/*styling header section & logo adjustment*/
 
 header {
 	background-color: #222;
@@ -35,17 +65,19 @@ header {
 }
 
 .logo img {
-	width: 105px;
+	width: 100px;
 	padding-top: 20px;
-	padding-bottom: 85px;
+	padding-bottom: 80px;
 }
+
+/*navigation bar with display flex*/
 
 nav {
 	display: flex;
 	justify-content: center;
 	position: relative;
-	top: -45px;
 	height: 280px;
+	top: -40px;
 }
 
 nav ul {
@@ -70,6 +102,7 @@ a.home {
 a {
 	text-decoration: none;
 }
+/*styling searchbar fonts, display, searchbutton*/
 
 .searchbar {
 	display: flex;
@@ -82,30 +115,38 @@ input {
 }
 
 .searchbutton {
+	color: #c78c06;
 	width: 45px;
 	height: 45px;
 	background-color: #222;
-	border-style: solid;
 	border-color: #c78c06;
-}
+	border-style: solid;
+	}
+
+	button {
+		padding: 15px 15px;
+	}
 
 .welcome {
 	background-image:url("../images/main-banner.jpg");
 	background-size: cover;
-	height: 645px;
+	height: 690px;
 }
 
-.welcome .wrapper {
-	background: #222222;
-    opacity: 0.7;
+	/*background image done*/
+
+.welcome-wrapper {
+	background:rgba(34, 34, 34, 0.7);
 	padding: 15px;
+	top: 60px;
 	position: relative;
-	top: 65px;
 }
+
+/*welcome wrapper to adjust the padding, position and the color and opacity*/
 
 h1 {
 	color: #fff;
-	font-size: 58pt;
+	font-size: 60pt;
 	font-weight: bold;
 	line-height: 1.5;
 	margin-top: 35px;
@@ -118,16 +159,18 @@ p {
 	margin-bottom: 15px;
 }
 
-.wrapper p{
+.welcome-wrapper p{
 	color: #fff;
 }
+
+/*styling the banner button with the color and the font required*/
 
 .bannerbutton {
 	background-color:#c78c06;
 	border: none;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16pt;
-	padding: 40px 35px;
+	padding: 30px 30px;
 }
 
 .about {
@@ -139,23 +182,18 @@ p {
 }
 
 .about img {
-	width: 730px;
-	height: 365px;
+	width: 710px;
+	height: 360px;
 }
 
 h2 {
-	font-size: 38pt;
+	font-size: 37pt;
 	font-weight: bold;
 }
 
 .about h2 {
-	margin-top: 30px;
+	margin-top: 33px;
 	margin-bottom: 20px;
-}
-
-.services {
-	background-color:#fff;
-	padding: 15px;
 }
 
 .services h2 {
@@ -163,38 +201,43 @@ h2 {
 	margin-bottom: 25px;
 }
 
-.services img {
-	width: 730px;
-	height: 485px;
+.services {
+	background-color:#fff;
+	padding: 15px;
 }
 
-.services .container {
-	margin-bottom: 40px;
-	background-color: #ffe6ac;
-
+.services img {
+	width: 710px;
+	height: 485px;
 }
 
 .padded-content {
 	padding: 15px;
 }
 
+.services-container div {
+	margin-bottom: 15px;
+	background-color: #ffe6ac;
+}
+
 h3 {
 	font-size: 24pt;
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
 
 .services button {
 	background-color: #222;
-	border: none;
 	font-family: 'Open Sans', sans-serif;
+	border: none;
 	font-size: 16pt;
-	color: #fff;
-	padding: 35px 30px;
 	letter-spacing: 1px;
+	color: #fff;
+	padding: 30px 30px;
 }
+/*our vision / button adjustment with background image and position*/
 
 .our-vision {
 	background-image: url(../images/vision.jpg);
@@ -202,14 +245,11 @@ h3 {
 	background-position: 0% 50%;
 	height: 280px;
 	color: #fff;
-}
-
-.our-vision .wrapper {
-	padding: 15px;
+	padding: 2%;
 }
 
 .our-vision button {   
-	background:rgba(34, 34, 34, 0.6);
+	background:rgba(34, 34, 34, 0.8);
 	border-style: solid;
 	border-color: #c78c06;
 	color: #fff;
@@ -224,13 +264,14 @@ h3 {
 	padding: 15px;
 }
 
-.team h2 {
-	margin-top: 45px;
-	margin-bottom: 30px;
-}
 .team img {
-	width: 730px;
-	height: 485px;
+	width: 710px;
+	height: 480px;
+}
+
+.team h2 {
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 
 .john {
@@ -239,22 +280,24 @@ h3 {
 }
 
 .team h3 {
-	margin-top: 15px;
+	margin-top: 10px;
 }
+
+.bob {
+	background-color: #ffe6ac;
+}
+
+/*h4 settings*/ 
 
 h4 {
 	font-size: 12pt;
 	font-weight: bold;
 	letter-spacing: 0.5px;
-	padding-bottom: 5px;
 	border-bottom: 2px #c78c06 solid;
+	padding-bottom: 5px;
 	margin-top: -10px;
 	margin-bottom: 10px;
 	width: 100%;
-}
-
-.bob {
-	background-color: #ffe6ac;
 }
 
 .info {
@@ -273,15 +316,17 @@ label {
 	letter-spacing: 1px;
 }
 
+/*contact input settings*/
+
 .contact input {
 	width: 700px;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	padding: 2.5px;
+	padding: 3px;
 }
 
 .contact input#message {
-	height: 160px;
+	height: 150px;
 }
 
 .contact button {
@@ -292,6 +337,8 @@ label {
 	letter-spacing: 1px;
 	padding: 5px;
 }
+/*
+styling the table with borders, background and padding*/
 
 table {
 	width: 100%;
@@ -310,31 +357,339 @@ td {
 	padding: 20px;
 	letter-spacing: 0px;
 }
+/*styling the footer*/
 
 
+footer {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	background-color: #222;
+	color: #c78c06;
+	padding: 10px 10px;
+}
 
+footer p {
+	letter-spacing: 0pt;
+	margin-top: 15px;
+}
+footer a{
+	color:#c78c06
+}
+footer a:link {
+	text-decoration: underline;
+}
 
+/* Media query for screens with minimum width of 760px */
 
+@media screen and (min-width: 760px) {
+	body {
+		letter-spacing: 0px;
+	}
 
+	/* Adjusting padding and height for the header */
 
+	header {
+		padding: 35px 150px;
+		height: 130px;
+	}
 
+	.logo img {
+		width: 100px;
+	}
 
+	.logo {
+		background: transparent;
+	}
 
+	/* Adjusting navigation menu position */
 
+	nav {
+		display: inline-block;
+		position: absolute;
+		left: 300px;
+		top: 65px;
+	}
+	nav ul {
+		display: inline-block;
+	}
 
+	nav ul li {
+		display: inline-block;
+	}
+	nav ul li a {
+		display: flex;
+		justify-content: flex-start;
+		padding: 30px 30px;
+		
+	}
 
+	a.home {
+		background-color: #c78c06;
+		padding: 23px 45px;
+	}
 
+	.searchbar {
+		width: 230px;
+		position: relative;
+		top: -152px;
+		left: 900px;
+	}
 
+	.searchbar input {
+		width: 200px;
+	}
 
+	.welcome {
+		height: 600px;
+		background-position: center;
+	}
 
+  /* adjust maximum width and centering welcome wrapper */
 
+	.welcome-wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 
+	h1 {
+		margin-right: 250px;
+		letter-spacing: 2px;
+	}
 
+	.bannerbutton {
+		letter-spacing: 1.5px;
+	}
 
+	.about {
+		padding: 30px 130px;
+	}
 
+	.about .container h2 {
+		letter-spacing: 2px;
+		margin-top:15px;
+	}
 
+	.about img {
+		height: 280px;
+		width: 600px;
+		float: left;
+		margin-right: 15px;
+	}
 
+	.services {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 
+	.services h2 {
+		letter-spacing: 2px;
+	}
 
+	 /* Setting up grid layout for services container */
 
+	.services-container {
+		display: grid;
+		grid-template-columns: 380px 380px 380px;
+		grid-template-rows: 720px 645px;
+		grid-gap: 10px 15px;
+	}
+
+	.transformation {
+		grid-column-start: 1;
+		width: 575px;
+	}
+
+	.transformation img {
+		height: 385px;
+		width: 575px;
+	}
+
+	.transformation button {
+		width: 545px;
+		height: 105px;
+	}
+
+/*adjusting columns as per the provided mockup*/
+
+	.marketing {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		width: 575px;
+		position: relative;
+		left: -195px;
+	}
+	.marketing button {
+		width: 545px;
+		height: 105px;
+	}
+
+	.marketing img {
+		width: 575px;
+		height: 385px;
+	}
+
+	.video-production {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		height: 630px;
+	}
+
+	.video-production img {
+		width: 380px;
+		height: 255px;
+	}
+
+	.video-production button {
+		width: 350px;
+		height: 105px;
+		position: relative;
+		bottom: -15px;
+	}
+
+	.web-dev img {
+		width: 380px;
+		height: 255px;
+	}
+
+	.print img {
+		width: 380px;
+		height: 255px;
+	}
+
+	.web-dev button {
+		width: 350px;
+		height: 105px;
+		position: relative;
+		bottom: -15px;
+	}
+	.print button {
+		width: 350px;
+		height: 105px;
+		position: relative;
+		bottom: -15px;
+	}
+
+	 /* Setting max width and marging for our vision wrapper */
+
+	.ourvision-wrapper  {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.ourvision-wrapper button {
+		width: 250px;
+		height: 110px;
+
+	}
+
+	.team {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.john img {
+		width: 600px;
+		height: 385px;
+		float: left;
+	}
+/*floating images as per the mockup*/
+
+	.john .padded-content {
+		float: right;
+		background-color: #ffe6ac;
+	}
+
+	.bob img {
+		width: 600px;
+		height: 385px;
+		float: right;
+	}
+
+	.bob .padded-content {
+		float: left;
+		background-color: #ffe6ac;
+	}
+
+	.team .padded-content {
+		width: 600px;
+		height: 385px;
+		padding: 0;
+	}
+
+	.teampadding{
+		padding: 15px;
+	}
+
+	.info {
+		max-width: 1200px;
+		margin: 0 auto;
+		letter-spacing: 2px;
+	}
+
+	.info h2 {
+		position: relative;
+		top : 60px;
+		letter-spacing: 2px;
+	}
+
+	/* Adjusting layout for contact section with display grid*/
+
+	.contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 500px 330px;
+		grid-gap: 15px;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		width: 600px;
+		position: relative;
+		top: 60px;
+	}
+
+	.contact input {
+		max-width: 600px;
+		max-height: 450px;
+	}
+
+	.location {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		max-width: 600px;
+	}
+
+	iframe {
+		max-width: 600px;
+	}
+
+	.hours {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		position: relative;
+		top: 50px;
+	}
+
+	.contact h2 {
+		letter-spacing: 2px;
+	}
+
+	.contact h3 {
+		letter-spacing: 2px;
+	}
+/*footer position and margin adjustment*/
+
+	footer {
+		position: relative;
+		top: 40px;
+	}
+	footer .copyright {
+		max-width: 1200px;
+		margin: 0 auto;
+	}	
+}	
+
+/*THANK YOU FOR THIS AMAZING CLASS PROFESSOR*/
 

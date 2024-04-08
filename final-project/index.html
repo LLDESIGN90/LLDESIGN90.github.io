@@ -7,13 +7,13 @@
 
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- Google Fonts Roboto -->
+    <!-- Google Fonts Roboto for typography-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
+    <!-- font awesome for Icons -->
 
     <script src="https://kit.fontawesome.com/a0599ed7ac.js" crossorigin="anonymous"></script>
 
@@ -26,7 +26,7 @@
 
         <nav>
             <ul>
-                <li><a href="#home"class="home">Home</a></li>
+                <li><a href="#home" class="home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
@@ -45,9 +45,10 @@
     <!--main-banner image to be made as a background in CSS-->
 
     <main>
-        <div class="welcome">]
-            <!--class wrapper added to adjust the content width etc..-->
-            <div class="wrapper">
+        <div class="welcome">
+            <!--class wrapper added to adjust the content width, padding etc..-->
+
+            <div class="welcome-wrapper">
             <h1>Welcome to Three Star Media</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cupiditate nisi unde laborum, obcaecati mollitia, accusamus corrupti quis qui non delectus placeat est aliquam illum. Eum debitis excepturi temporibus accusamus.
@@ -61,6 +62,8 @@
     <section id="about">
         <div class="about">
             <div class="container">
+
+                <!--container class added to adjust the padding-->
 
             <img src="images/about-us.jpg" alt="Lounge">
         
@@ -79,8 +82,9 @@
         <div class="services">
 
             <h2>Our Services</h2>
+            <!--class .services-container added for display grid to our services section-->
 
-            <div class="container">
+            <div class="services-container">
                 <div class="transformation">
 
             <img src="images/digital.jpg" alt="Work office">
@@ -132,7 +136,7 @@
         
         <h3>Web Development</h3>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id eveniet consectetur rem et quae, expedita quasi libero labore explicabo? Magnam culpa similique et mollitia! Accusamus reiciendis impedit laboriosam aut.</p>
+        <p>Lorem ipsum dolor sit ameing elit. Recusandae id eveniet consectetur rem et quae, expedita quasi libero llitia! Accusamus reiciendis labore explicabo? Magnam culpa similique et mollitia! Accusamus reiciendis impedit laboriosam aut.</p>
 
         <button type="button" class="web-plans">Web Plans <i class="fa-sharp fa-solid fa-play"></i></button>
 
@@ -151,13 +155,16 @@
         
         <button type="button" class="print-plans">Print Plans <i class="fa-sharp fa-solid fa-play"></i></button>
 
-         </div>
+        </div>
+     </div>
+    </div>
     </div>
 
     <!--Vision image to be made as a background in CSS-->
     
     <div class="our-vision">
-        <div class="wrapper">
+        <div class="ourvision-wrapper">
+            <!--ourvision-wrapper class added to adjust the max-width, margin etc for our vision-->
             <h3>Our Vision</h3>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem labore nemo. Error, perferendis labore sit ab reiciendis laborum maxime a exercitationem quibusdam dignissimos vero, quidem quaerat maiores enim corporis!</p>
@@ -177,8 +184,9 @@
         <div class="john">
 
             <img src="images/john.jpg" alt="Photo of john Doe">
-
+            <!--class padded-content to adjust the padding of our team-->
             <div class="padded-content">
+                <div class="teampadding">
             
             <h3>John Doe</h3>
 
@@ -188,12 +196,14 @@
             
             </div>
         </div>
+    </div>
 
         <div class="bob">
 
             <img src="images/bob.jpg" alt="Photo of Bob Rite">
 
             <div class="padded-content">
+                <div class="teampadding">
 
             <h3>Bob Rite</h3>
 
@@ -204,17 +214,23 @@
 
             </div>
         </div>
+    </div>
+</div>
+</section>
 
-    </section>
+<!--contact section with specific classes to control margin, width, padding-->
 
     <section id="contact">
 
         <div class="info">
 
             <h2>Contact Us</h2>
+
             <div class="contact">
-            <h3>Send us a message</h3>
+            
             <div class="message">
+
+                <h3>Send us a message</h3>
 
         <form action="index.html" method="post">
 
@@ -232,10 +248,8 @@
         </form>
 
             </div>
-        </div>
-    </div>
 
-    <!-- Table for days and hours of operation to be finished in CSS -->
+    <!-- Table for days and hours of operation with specific classes to adjust grid settings and position -->
 
     <div class="hours">
 
@@ -278,17 +292,18 @@
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.9628624354655!2d-75.76896130642092!3d45.34918709999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718ab4c4e65%3A0x86fd3e15e3355caf!2sAlgonquin%20College%20-%20Building%20A!5e0!3m2!1sfr!2sca!4v1711390066523!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
-
-    </section>
+    </div>
+</div>
+</section>
 
 </main>
-
+<!--footer for copyright informations-->
 <footer>
     <div class="copyright">
         <p>© Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="index.html">Unsplash</a></p>
     </div>
-</footer>        
 
+        </footer>        
     </body>
 </html>
